@@ -17,11 +17,11 @@
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-trojan"}}
         },
         {
-            "port": "/etc/caddy/xrayss","listen": "127.0.0.1","protocol": "shadowsocks",
+            "port": "/etc/caddy/ss","listen": "127.0.0.1","protocol": "shadowsocks",
             "settings": {"method": "$ParameterSSENCYPT","password": "$AUUID"},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-ss"}}
         },
-        {   "port": "/etc/caddy/xraysocks","listen": "127.0.0.1","protocol": "socks",
+        {   "port": "/etc/caddy/socks","listen": "127.0.0.1","protocol": "socks",
             "settings": {"auth": "password","accounts": [{"user": "$AUUID","pass": "$AUUID"}]},
             "streamSettings": {"network": "ws","wsSettings": {"path": "/$AUUID-socks"}}
         }
